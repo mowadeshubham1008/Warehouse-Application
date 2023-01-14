@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+        </script>
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.mi
+        n.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-center">
+                     <h3>SHIPMENT TYPE REGISTER PAGE!</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form id="ShipmentTypeRegister" action="#" method="POST">
+                    <div class="row">
+                        <div class="col-3">
+                            <label>Shipment Mode </label> 
+                        </div>
+                        <div class="col-4">
+                            <select class="form-control" name="shipMode" id="shipMode">
+                                <option value="">--select--</option>
+                                <option value="air">Air</option>
+                                <option value="train">Train</option>
+                                <option value="truck">Truck</option>
+                                <option value="Ship">Ship</option>
+                            </select>
+                        </div>
+                        <div class="col-5">
+                            <span id="shipModeError"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <label>Shipment Code </label>
+                        </div>
+                        <div class="col-4">
+                            <input type="text" name="shipCode" id="shipCode" class="form-control"/>
+                        </div>
+                        <div class="col-5">
+                            <span id="shipCodeError"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label>Enable Shipment </label>
+                        </div>
+                        <div class="col-4">
+                            <input type="radio" name="enbleShip" id="enbleShip1" value="yes">YES
+                            <input type="radio" name="enbleShip" id="enbleShip2" value="no">NO
+                        </div>
+                        <div class="col-4">
+                            <span id="enbleShipError"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <label>Shipment Grade </label>
+                        </div>
+                        <div class="col-4">
+                            <input type="radio" name="shipGrade" id="shipGrade1" value="yes">YES 
+                            <input type="radio" name="shipGrade" id="shipGrade2" value="no">NO
+                        </div>
+                        <div class="col-4">
+                            <span id="shipGradeError"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label>Description </label>
+                        </div>
+                        <div class="col-5">
+                            <textarea name="shipDesc" id="shipDesc" class="form-control"></textarea>                        
+                        </div>
+                        <div id="shipDescError"></div>
+                    </div>
+                    <input type="submit" value="create" class="btn btn-success" />
+                </form>
+            </div>
+            <!--Card End-->
+            <div class="card-footer">
+                <span class="text-success">Shipment type Created!</span>
+            </div>
+        </div>         
+    </body>
+</html>
